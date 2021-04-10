@@ -52,7 +52,7 @@ img {
 }
 
 @media screen and (max-width: 900px) {
-  .row, .row1 {   
+  .row, .row1, footer {   
       flex-direction: column;
       width: 100%;
   }
@@ -61,7 +61,7 @@ img {
      
     -ms-flex: 60%; /* IE10 */
     flex: 60%;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     background-color: #bcaec6;
     padding: 20px;
      box-shadow: 0 0 1em black;
@@ -74,4 +74,52 @@ img {
     background-color:darkkhaki;
     box-shadow: 0 0 1em black;
     text-align: justify;
+}
+.footer{
+    text-align: center;
+    box-shadow: 0 0 1em black;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color:white;
+    padding: 80px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.footer h2{
+    margin: 0;
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-github {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: black;
+  color: white;
+}
+.fa-telegram{
+    background-color: cornflowerblue;
+    color:white;
+    
+}
+a{
+    margin: 0px;
+    padding: 10px;
+}
+.footer h3{
+    margin:8px
 }
