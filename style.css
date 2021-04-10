@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: serif;
     margin: 0;
@@ -7,52 +9,69 @@ body {
     box-shadow: 0 0 1em lightgray;
 }
 img {
-  border-radius: 50%;
-    margin: 20px;
-    float: right;
+  border-radius: 30%;
+   text-align: center;
     width: 100%;
-    height: auto;
-    max-width: 200px
+    max-width: 250px;
+    margin: 0 auto;
 }
 .header{
     overflow: auto;
     padding: 40px;
-    text-align: left;
+    text-align: center;
     background-color:#aec7d1;
     padding-bottom: 20px;
-    
+    box-shadow: 0 0 1em black;
 }
-
-.header h1, {
-    height: 100px;
-    margin:auto;
-    float: left;
-    text-align: center;
-    border-bottom: 5px solid black;
-}
-.header h2{
-    padding-left: 30px;
-}
-.header p{
-    padding: 10px;
+.row, .row1{
+    display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
 }
 .edu h2, .about h2{
     text-align: center;
 }
 .about{
-    margin:auto;
-    float: left;
-    width: 36%;
+    
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
     padding-bottom: 50px;
     background-color: bisque;
     padding: 20px;
-     box-shadow: 0 0 1em lightgray;
+     box-shadow: 0 0 1em black;
+    text-align: justify;
 }
 .edu{
-    margin-top: 0;
-    float: right;
-    width: 55%;
-    padding:20.5px;
+    -ms-flex: 60%; /* IE10 */
+    flex: 60%;
+    padding:20px;
     background-color: #f6a374;
-    box-shadow: 0 0 1em lightgray;
+    box-shadow: 0 0 1em black;
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+  .row, .row1 {   
+      flex-direction: column;
+      width: 100%;
+  }
+}
+.skills{
+     
+    -ms-flex: 60%; /* IE10 */
+    flex: 60%;
+    padding-bottom: 50px;
+    background-color: #bcaec6;
+    padding: 20px;
+     box-shadow: 0 0 1em black;
+    text-align: justify;
+}
+.work{
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+    padding:20.5px;
+    background-color:darkkhaki;
+    box-shadow: 0 0 1em black;
+    text-align: justify;
 }
