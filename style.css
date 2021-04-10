@@ -1,8 +1,58 @@
-h1 {
-    color:red;
-    font-size: 20px;
+
+body {
+    font-family: serif;
+    margin: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em lightgray;
 }
-h2 {
-    color: black;
-    font-size: 15px;
+img {
+  border-radius: 50%;
+    margin: 20px;
+    float: right;
+    width: 100%;
+    height: auto;
+    max-width: 200px
+}
+.header{
+    overflow: auto;
+    padding: 40px;
+    text-align: left;
+    background-color:#aec7d1;
+    padding-bottom: 20px;
+    
+}
+
+.header h1, {
+    height: 100px;
+    margin:auto;
+    float: left;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+.header h2{
+    padding-left: 30px;
+}
+.header p{
+    padding: 10px;
+}
+.edu h2, .about h2{
+    text-align: center;
+}
+.about{
+    margin:auto;
+    float: left;
+    width: 36%;
+    padding-bottom: 50px;
+    background-color: bisque;
+    padding: 20px;
+     box-shadow: 0 0 1em lightgray;
+}
+.edu{
+    margin-top: 0;
+    float: right;
+    width: 55%;
+    padding:20.5px;
+    background-color: #f6a374;
+     box-shadow: 0 0 1em lightgray;
 }
